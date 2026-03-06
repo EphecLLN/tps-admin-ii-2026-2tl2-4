@@ -1,0 +1,102 @@
+; File written on Fri Mar  6 20:17:28 2026
+; dnssec_signzone version 9.18.46
+l2-4.ephec-ti.be.	86400	IN SOA	ns.l2-4.ephec-ti.be. admin.l2-4.ephec-ti.be. (
+					2026030401 ; serial
+					3600       ; refresh (1 hour)
+					1800       ; retry (30 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 8 3 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					U/RGkKVOPxhckcpLlIIyHTWeaB4ttnAKgsoX
+					zKvkqvgYJneFNGik4BFto+sq+YtgPZUe2EMB
+					VtZIUGJfT4Jip+6FP2h4gx+8Bb0C51iJ5qH4
+					colf05Bqj5gW06Hyg0WSNyT2PItMMUth39Qr
+					ZydzfIc+e3exNNUHiiTm+u2aAGw= )
+			86400	NS	ns.l2-4.ephec-ti.be.
+			86400	RRSIG	NS 8 3 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					G7UJLi4Vmcu1u6IGawkeC1OSgVunYRRhkJTy
+					OZ7R1HxfN8Jukmgd283owd66m53vEfT0T8aX
+					Z6rHqo+qoUwHUVJug2JsjiQyk4faS65Tma91
+					eKIbhI4xei4LroNMw3i9Hn2urn228PIsD0zU
+					xBmP9JEoXqRlcB/JZd9U7bgvSu8= )
+			86400	NSEC	ns.l2-4.ephec-ti.be. NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 8 3 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					ivSWpaQc4ww+hFWR7oXbyumdKDG4/hLwP2xP
+					xd9KWSQWST8WTWmCnfKSapLOc77hGk5KUJay
+					uggZhR8vOZ0qVetauuBJtIIVRyW3tQ5DJ+K4
+					CAanyi7EudcrETiyMlo+TEvk4FJCrQQcAgeg
+					wSlJPydJfDAD1+TIe76uDtgKA0I= )
+			86400	DNSKEY	256 3 8 (
+					AwEAAcG0JnbhRCRWBhqDgWgGGzDR24kK9pZ9
+					nHCFdEjRqqncAdp2L5uGAZUlAs+oHPyG+pjx
+					sdDY1e1ydtoILqsICk/9+zNTLVFxCUyZihNC
+					cmOMJcrK5GLm20Jkj0rlvBM8a7yGk3TPApKP
+					TDPw2RHChHVG6aftlqptb1odKa/a2L+/
+					) ; ZSK; alg = RSASHA256 ; key id = 56716
+			86400	DNSKEY	257 3 8 (
+					AwEAAZDfUwCuDu/QhU/kQuP/vPRcsYciqwNY
+					ozEY78n6GqCZ7FqMU097dEpgiVlcwxf2/G0U
+					ZzxsFJpogJlScbhXOLw2H6yOPXqoUADXZBCO
+					S5aHsCfXiqbtuGRo+IeKOB61CTDkT4fJzocj
+					skVeoSt0nQ98qMS9SX84A65StcPy6RdlHyPM
+					ibUMlgMpIieybgs7RE/aGe2wWn4uxa3kzoBW
+					Dov1QfnbYF29B07yirjK8Vh8mBCPsuC7DAiY
+					K5OF+Y7dR1FJWl3wcS761Cgqhi3hUsBsFv2H
+					z5sZW/iG9QwCTofGQkHYxI1L6pMjTOeuA+Tf
+					9b1l23oOTDSh974gS+2BVnM=
+					) ; KSK; alg = RSASHA256 ; key id = 27164
+			86400	RRSIG	DNSKEY 8 3 86400 (
+					20260405191728 20260306191728 27164 l2-4.ephec-ti.be.
+					jDOcxcX4uVvd430cacNhzXZPEhM1qNj2ybCK
+					1sa90mxgOV6qcnuLT8NQZEQ1dUd+6wDx20zy
+					axsOk9WQqbcqdpxfylbIRvwP0h5dcOGKDzLU
+					G7SJzHk75wX9tRIKAoObP9tGMRvfKh6dETgD
+					cylQHpM3+EcolTo53inqsSL1Hol3hHsQveeA
+					sS3CBQwRgWnN+x7D0MwDWwaiLaeIRAVzdW0F
+					IGE5PkLGJpYjFQOW1525DRLO5ZfhZzH95Kzg
+					5885AL4+L0iMhZPW7uo3Qjd/PHIOmmBtyaS3
+					Khd5cQruq1fMqdBAH58Cwa/etvXBARj2GOFV
+					kbe15f9W+mIA0iTeAw== )
+			86400	RRSIG	DNSKEY 8 3 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					J6YOs+vO5ssswtfntZz66Ykd87OphgX7weoU
+					WU/gUGv8lVw9RLw7FbfKPG9w8aslTuqLCdQ/
+					MWRs7oQPsEa8hekhLicw1Bj3RQzOMPHDAWE+
+					vDQMutLxmhXZs0SrU0oo6Irgew18GQub2RuW
+					ucORGg6S4iQHvNi99+xaKhZDyr8= )
+ns.l2-4.ephec-ti.be.	86400	IN A	91.134.138.162
+			86400	RRSIG	A 8 4 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					pzuWkjh74CVdU32O6c2MWjciBmaIlPaXsSqx
+					TiNq4TmJRo6HiLLDqiJWSjmjFDNkjQwIee0x
+					AH4VZ/Vj/CSwp929R7zi+Xh1GFx0N0YYMoGH
+					Wvgjsr3NRP8Btd9/rW5Wam5BYpe8maq/xnLs
+					ygMcg/0A7Mke/d7ABjUVOht2QO8= )
+			86400	NSEC	www.l2-4.ephec-ti.be. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					SVHlpUQ15eultoPJ0+KV6YPtxh2HXqYs92qG
+					dwdNQ7g4yTjT4yQNPDjZKbJNjTnAYSIwZW33
+					mITo8G05Gb8PNhwQ4mPJ1ZeW2JyjPMlSC30H
+					ZOaDZCooEj1HHQHl+il74wfm0d49omCibsJD
+					WBmvS5PkyHuc/ivnaBfTTtWY61E= )
+www.l2-4.ephec-ti.be.	86400	IN A	91.134.138.162
+			86400	RRSIG	A 8 4 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					gyE68LoYWyVyqi6O3Ija9dZC/FeFOSt6bhH+
+					DQ4aKlZhg+s9WsijO/BWNtu/ju4afG3encR8
+					aFJPT9022TJrYLUiTjL4MIOqrgb6hhJZdDA9
+					t/4W3mwmIfot34pfGQsSkzn9XlKuSLjIx7YY
+					Ypm9Wk1fw1GDC9+UUn7QVTVJoRs= )
+			86400	NSEC	l2-4.ephec-ti.be. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20260405191728 20260306191728 56716 l2-4.ephec-ti.be.
+					bw+QHF5/cBmE2azN4NY0SxGiLZT5G7NL7XSS
+					QQ6u3uzy5iYj+YKBhB6ltzCAj/GtxppwAqu8
+					TspzAF8NHPwLimlavwPLV5ew0CvNrl0bOkfY
+					S33HzS6iNvNzAwMWCh3Hx53p5Q5xw9wofaQi
+					wI/6GZodbbmjgpmyLTFfY9RZgqY= )
