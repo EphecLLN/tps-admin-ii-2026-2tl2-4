@@ -10,5 +10,5 @@ $TTL 86400
 @   IN  NS  ns.l2-4.ephec-ti.be.
 
 ; Records A
-ns  IN  A   51.178.40.134
-www IN  A   51.178.40.134
+ns  IN  A  91.134.138.162
+www IN  A  91.134.138.162
