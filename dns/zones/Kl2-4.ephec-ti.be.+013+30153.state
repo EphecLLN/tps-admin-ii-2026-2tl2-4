@@ -1,0 +1,19 @@
+; This is the state of key 30153, for l2-4.ephec-ti.be.
+Algorithm: 13
+Length: 256
+Lifetime: 0
+KSK: yes
+ZSK: yes
+Generated: 20260306215744 (Fri Mar  6 21:57:44 2026)
+Published: 20260306215744 (Fri Mar  6 21:57:44 2026)
+Active: 20260306215744 (Fri Mar  6 21:57:44 2026)
+PublishCDS: 20260307230244 (Sat Mar  7 23:02:44 2026)
+DNSKEYChange: 20260307000244 (Sat Mar  7 00:02:44 2026)
+ZRRSIGChange: 20260306215744 (Fri Mar  6 21:57:44 2026)
+KRRSIGChange: 20260307000244 (Sat Mar  7 00:02:44 2026)
+DSChange: 20260306215744 (Fri Mar  6 21:57:44 2026)
+DNSKEYState: omnipresent
+ZRRSIGState: rumoured
+KRRSIGState: omnipresent
+DSState: hidden
+GoalState: omnipresent
