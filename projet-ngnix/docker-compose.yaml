@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Service Base de données (Nom de service "db" pour products.php)
+  db:
+    image: mariadb:latest
+    container_name: db-server-tp5
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
+      MYSQL_DATABASE: woodytoys
+    networks:
+      - net-tp5
+
+  # Service PHP (Nom de service "php" pour nginx.conf)
+  php:
+    build: ./php
+    container_name: php-server-tp5
+    restart: always
+    volumes:
+      - ./html:/var/www/html
+    networks:
+      - net-tp5
+    depends_on:
+      - db
+
+  # Service Serveur Web (Nginx)
+  nginx:
+    image: nginx:latest
+    container_name: web-server-tp5
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./html:/var/www/html
+    networks:
+      - net-tp5
+    depends_on:
+      - php
+
+networks:
+  net-tp5:
+    driver: bridge
