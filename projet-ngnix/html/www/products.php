@@ -1,3 +1,20 @@
+<?php
+// --- CONFIGURATION DE LA CONNEXION (SÉCURISÉE TP6) ---
+// On récupère les variables définies dans le fichier db.env via Docker
+$dbhost = getenv('MARIADB_HOST');     // Récupère "mariadb"
+$dbname = getenv('MARIADB_DATABASE'); // Récupère "woodytoys"
+$dbuser = getenv('MARIADB_USER');     // Récupère "woodytoys"
+$dbpass = getenv('MARIADB_PASSWORD'); // Récupère ton mot de passe secret
+
+// Tentative de connexion
+$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) 
+    or die("Erreur : Impossible de joindre la base de données sur l'hôte '$dbhost'");
+
+// Requête SQL
+$result = mysqli_query($connect, "SELECT id, product_name, product_price FROM products");
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Catalogue WoodyToys</title>
@@ -12,7 +29,7 @@
             padding-top: 50px;
         }
         h1 { color: #333; text-shadow: 1px 1px 2px white; }
-        
+
         /* Style du tableau */
         table {
             background-color: white;
@@ -28,23 +45,6 @@
 <body>
     <h1>Catalogue WoodyToys - Groupe L2-4</h1>
 
-    <?php
-    // --- CONFIGURATION DE LA CONNEXION ---
-    $dbname = 'woodytoys';
-    $dbuser = 'root';
-    $dbpass = 'mypass';
-    
-    // IMPORTANT : On utilise le nom du service défini dans le docker-compose.yaml
-    $dbhost = 'db'; 
-
-    // Tentative de connexion
-    $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) 
-               or die("Erreur : Impossible de joindre la base de données sur l'hôte '$dbhost'");
-
-    // Requête SQL
-    $result = mysqli_query($connect, "SELECT id, product_name, product_price FROM products");
-    ?>
-
     <table>
         <tr>
             <th>ID</th>
@@ -55,9 +55,10 @@
         <?php
         // Boucle d'affichage des résultats
         while ($row = mysqli_fetch_array($result)) {
-            printf("<tr><td>%s</td> <td>%s</td> <td>%s €</td></tr>", 
-                    $row[0], $row[1], $row[2]);
+            printf("<tr><td>%s</td> <td>%s</td> <td>%s €</td></tr>",
+                $row[0], $row[1], $row[2]);
         }
+        
         // Fermeture de la connexion
         mysqli_close($connect);
         ?>
