@@ -30,6 +30,8 @@ services:
       - db.env
     volumes:
       - ./db/sql/:/docker-entrypoint-initdb.d/
+      - ./mariadb/my-resolve.cnf:/etc/mysql/conf.d/my-resolve.cnf
+      - mariadb_data:/var/lib/mysql
     networks:
       - backend
 
@@ -38,3 +40,6 @@ networks:
     name: tp6_fresh_frontend
   backend:
     name: tp6_fresh_backend
+
+volumes:
+  mariadb_data:
