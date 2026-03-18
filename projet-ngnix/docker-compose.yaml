@@ -2,12 +2,13 @@ services:
   nginx:
     build: ./nginx
     container_name: nginx-tp6
+    # Let's Encrypt a besoin du port 80 pour valider que tu es le proprio du domaine
     ports:
-      - "8080:80"
-      - "8443:443"
+      - "80:80"
+      - "443:443"
     volumes:
-      - ./nginx/ssl:/etc/nginx/ssl
-      - ./html/:/var/www/html/
+      - ./html:/var/www/html
+      - ./nginx/letsencrypt:/etc/letsencrypt # Stockage persistant des certificats
     networks:
       - frontend
     depends_on:
@@ -17,10 +18,7 @@ services:
     build: ./php
     container_name: php-tp6
     volumes:
-      - ./html/:/var/www/html/
-
-    env_file:
-      - db.env
+      - ./html:/var/www/html
     networks:
       - frontend
 
@@ -28,20 +26,15 @@ services:
     image: mariadb:11.1
     container_name: mariadb-tp6
     env_file:
-      - db/root.env
       - db.env
     volumes:
-      - ./db/sql/:/docker-entrypoint-initdb.d/
-      - ./mariadb/my-resolve.cnf:/etc/mysql/conf.d/my-resolve.cnf
       - mariadb_data:/var/lib/mysql
     networks:
-      - backend
+      - frontend
 
 networks:
   frontend:
-    name: tp6_fresh_frontend
-  backend:
-    name: tp6_fresh_backend
+    external: true # Utilise ton réseau existant ou retire 'external' si tu veux qu'il le crée
 
 volumes:
   mariadb_data:
