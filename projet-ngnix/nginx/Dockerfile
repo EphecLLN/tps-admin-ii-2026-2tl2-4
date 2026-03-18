@@ -1,8 +1,10 @@
-FROM nginx:alpine
+FROM nginx:latest
 
-# Supprime la config par défaut de l'image de base
-RUN rm /etc/nginx/conf.d/default.conf
+# Installation de certbot et du plugin nginx
+RUN apt-get update && apt-get install -y \
+    certbot \
+    python3-certbot-nginx \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copie ta nouvelle config et tes certificats
-COPY default.conf /etc/nginx/conf.d/
-COPY ssl/ /etc/nginx/ssl/
+# On garde tes copies de config si nécessaire
+COPY default.conf /etc/nginx/conf.d/default.conf
