@@ -6,6 +6,7 @@ services:
       - "8080:80"
       - "8443:443"
     volumes:
+      - ./nginx/ssl:/etc/nginx/ssl
       - ./html/:/var/www/html/
     networks:
       - frontend
@@ -17,6 +18,7 @@ services:
     container_name: php-tp6
     volumes:
       - ./html/:/var/www/html/
+
     env_file:
       - db.env
     networks:
