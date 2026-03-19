@@ -1,10 +1,10 @@
 <?php
 // --- CONFIGURATION DE LA CONNEXION (SÉCURISÉE TP6) ---
 // On récupère les variables définies dans le fichier db.env via Docker
-$dbhost = getenv('MARIADB_HOST');     // Récupère "mariadb"
-$dbname = getenv('MARIADB_DATABASE'); // Récupère "woodytoys"
-$dbuser = getenv('MARIADB_USER');     // Récupère "woodytoys"
-$dbpass = getenv('MARIADB_PASSWORD'); // Récupère ton mot de passe secret
+$dbhost = "db";     // Récupère "mariadb"
+$dbname = "woodytoys"; // Récupère "woodytoys"
+$dbuser = "root";     // Récupère "woodytoys"
+$dbpass = "mypass"; // Récupère ton mot de passe secret
 
 // Tentative de connexion
 $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) 
