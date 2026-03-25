@@ -1,0 +1,26 @@
+services:
+  mailserver:
+    image: ghcr.io/docker-mailserver/docker-mailserver:latest
+    container_name: mailserver
+    # Le nom d'hôte doit correspondre à ton record A et MX (FQDN complet)
+    hostname: mail.l2-4.ephec-ti.be
+    # Chargement du fichier d'environnement
+    env_file: mailserver.env
+    ports:
+      - "25:25"    # SMTP
+      - "143:143"  # IMAP (non chiffré/STARTTLS)
+      - "587:587"  # Submission (SMTP chiffré)
+      - "993:993"  # IMAPS (IMAP chiffré)
+    volumes:
+      - ./docker-data/dms/mail-data/:/var/mail/
+      - ./docker-data/dms/mail-state/:/var/mail-state/
+      - ./docker-data/dms/mail-logs/:/var/log/mail/
+      - ./docker-data/dms/config/:/tmp/docker-mailserver/
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro # Ajout du volume Let's Encrypt
+    environment:
+      - ENABLE_SPAMASSASSIN=1
+      - ENABLE_CLAMAV=0
+      - ENABLE_FAIL2BAN=1
+      - DMS_DEBUG=0
+    restart: always

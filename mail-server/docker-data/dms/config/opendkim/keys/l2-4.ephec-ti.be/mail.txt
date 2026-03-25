@@ -1,0 +1,3 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArSRVrcohRpKTCOjOzZ/eu/+9A3/t9YXDxuCE4Ljs3TFy/mFvmk5T99GqAX+dF2OtT+/xSzVpr/GKLgse2ONKnCqjxLqDH9nWyG89gQ5ptIZjkmHnFvROIZN810/+F6PDMJ72HqSe2iiDoPw3EISHVm986iWWpPnNLJ40lF1+mn/gP4ixQw6mas1oiEFd1wI1WUL08K8qPkFjGd"
+	  "dsQrOZk0kCwD9e0qdGUhbcmea6n5R8VIcWmYfNIGUgzAqsGddoWsYQcZ/9u/V7CtOlLOAsLCzeP2PkVJbAcCmlLRRYvR/KDLnsL/o9r+ykNoxv9o3taZoG2nOuaulg6WxV32NhtwIDAQAB" )  ; ----- DKIM key mail for l2-4.ephec-ti.be

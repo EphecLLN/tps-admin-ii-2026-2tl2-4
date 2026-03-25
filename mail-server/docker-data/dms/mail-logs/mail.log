@@ -1,0 +1,422 @@
+2026-03-25T08:12:47.671828+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2026-03-25T08:12:47.961663+00:00 mail opendkim[696]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2026-03-25T08:12:48.103523+00:00 mail opendmarc[705]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2026-03-25T08:12:48.103540+00:00 mail opendmarc[705]: additional trusted authentication services: mail.l2-4.ephec-ti.be
+2026-03-25T08:12:48.555854+00:00 mail postfix/postfix-script[821]: starting the Postfix mail system
+2026-03-25T08:12:48.561867+00:00 mail postfix/master[822]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-03-25T08:12:49.212588+00:00 mail amavis[825]: starting. /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T08:12:49.212627+00:00 mail amavis[825]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T08:12:49.385860+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T08:12:49.385897+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T08:12:49.393919+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T08:12:49.394019+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T08:12:49.395134+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T08:12:49.395159+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T08:12:49.395168+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T08:12:49.395175+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T08:12:49.395181+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T08:13:33.680637+00:00 mail postfix/postfix-script[1156]: refreshing the Postfix mail system
+2026-03-25T08:13:33.686324+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T08:13:33.700242+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T08:13:33.867113+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-08:13:33 Re-exec server during HUP
+2026-03-25T08:13:34.233354+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T08:13:34.233392+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T08:13:34.402457+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T08:13:34.402490+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T08:13:34.409346+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T08:13:34.409391+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T08:13:34.409694+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T08:13:34.409714+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T08:13:34.409722+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T08:13:34.409729+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T08:13:34.409734+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T08:20:06.778116+00:00 mail postfix/postscreen[1875]: cache btree:/var/lib/postfix/postscreen_cache full cleanup: retained=0 dropped=0 entries
+2026-03-25T08:20:06.778692+00:00 mail postfix/postscreen[1875]: CONNECT from [91.134.138.208]:51976 to [192.168.144.2]:25
+2026-03-25T08:20:06.778773+00:00 mail postfix/postscreen[1875]: HANGUP after 0 from [91.134.138.208]:51976 in tests before SMTP handshake
+2026-03-25T08:20:06.778781+00:00 mail postfix/postscreen[1875]: DISCONNECT [91.134.138.208]:51976
+2026-03-25T08:38:39.191004+00:00 mail postfix/postscreen[3541]: CONNECT from [158.94.210.212]:62190 to [192.168.144.2]:25
+2026-03-25T08:38:45.192022+00:00 mail postfix/postscreen[3541]: PASS NEW [158.94.210.212]:62190
+2026-03-25T08:38:45.211811+00:00 mail postfix/smtpd[3551]: connect from unknown[158.94.210.212]
+2026-03-25T08:38:45.399279+00:00 mail postfix/smtpd[3551]: NOQUEUE: reject: RCPT from unknown[158.94.210.212]: 554 5.7.1 <spameri@tiscali.it>: Relay access denied; from=<spameri@tiscali.it> to=<spameri@tiscali.it> proto=ESMTP helo=<WIN-7N1FIECL6IC>
+2026-03-25T08:38:45.550793+00:00 mail postfix/smtpd[3551]: disconnect from unknown[158.94.210.212] ehlo=1 mail=1 rcpt=0/1 rset=1 quit=1 commands=4/5
+2026-03-25T08:40:06.647790+00:00 mail postfix/postscreen[3541]: CONNECT from [91.134.138.208]:60518 to [192.168.144.2]:25
+2026-03-25T08:40:06.647889+00:00 mail postfix/postscreen[3541]: HANGUP after 0 from [91.134.138.208]:60518 in tests before SMTP handshake
+2026-03-25T08:40:06.647894+00:00 mail postfix/postscreen[3541]: DISCONNECT [91.134.138.208]:60518
+2026-03-25T08:42:05.725291+00:00 mail postfix/anvil[3553]: statistics: max connection rate 1/60s for (smtpd:158.94.210.212) at Mar 25 08:38:45
+2026-03-25T08:42:05.725314+00:00 mail postfix/anvil[3553]: statistics: max connection count 1 for (smtpd:158.94.210.212) at Mar 25 08:38:45
+2026-03-25T08:42:05.725327+00:00 mail postfix/anvil[3553]: statistics: max cache size 1 at Mar 25 08:38:45
+2026-03-25T08:45:42.740099+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=65.49.1.212, lip=192.168.144.2, session=<zGMMS9VNBldBMQHU>
+2026-03-25T08:46:28.375462+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=65.49.1.212, lip=192.168.144.2, session=<Q7vETdVNcuZBMQHU>
+2026-03-25T08:47:32.054775+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=65.49.1.212, lip=192.168.144.2, session=<rmaQUdVNvstBMQHU>
+2026-03-25T08:56:18.985392+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=198.235.24.99, lip=192.168.144.2, session=<u7j4cNVN/O/G6xhj>
+2026-03-25T08:56:19.491196+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=198.235.24.99, lip=192.168.144.2, session=<OXEAcdVNAvDG6xhj>
+2026-03-25T09:00:06.363962+00:00 mail postfix/postscreen[5483]: CONNECT from [91.134.138.208]:36298 to [192.168.144.2]:25
+2026-03-25T09:00:06.364395+00:00 mail postfix/postscreen[5483]: HANGUP after 0 from [91.134.138.208]:36298 in tests before SMTP handshake
+2026-03-25T09:00:06.364457+00:00 mail postfix/postscreen[5483]: DISCONNECT [91.134.138.208]:36298
+2026-03-25T09:20:06.490982+00:00 mail postfix/postscreen[7293]: CONNECT from [91.134.138.208]:47342 to [192.168.144.2]:25
+2026-03-25T09:20:06.491253+00:00 mail postfix/postscreen[7293]: HANGUP after 0 from [91.134.138.208]:47342 in tests before SMTP handshake
+2026-03-25T09:20:06.491304+00:00 mail postfix/postscreen[7293]: DISCONNECT [91.134.138.208]:47342
+2026-03-25T09:40:06.277658+00:00 mail postfix/postscreen[9088]: CONNECT from [91.134.138.208]:50590 to [192.168.144.2]:25
+2026-03-25T09:40:06.277833+00:00 mail postfix/postscreen[9088]: HANGUP after 0 from [91.134.138.208]:50590 in tests before SMTP handshake
+2026-03-25T09:40:06.277863+00:00 mail postfix/postscreen[9088]: DISCONNECT [91.134.138.208]:50590
+2026-03-25T10:00:06.091706+00:00 mail postfix/postscreen[10884]: CONNECT from [91.134.138.208]:52242 to [192.168.144.2]:25
+2026-03-25T10:00:06.091996+00:00 mail postfix/postscreen[10884]: HANGUP after 0 from [91.134.138.208]:52242 in tests before SMTP handshake
+2026-03-25T10:00:06.092048+00:00 mail postfix/postscreen[10884]: DISCONNECT [91.134.138.208]:52242
+2026-03-25T10:20:06.925351+00:00 mail postfix/postscreen[12683]: CONNECT from [91.134.138.208]:45996 to [192.168.144.2]:25
+2026-03-25T10:20:06.926857+00:00 mail postfix/postscreen[12683]: HANGUP after 0 from [91.134.138.208]:45996 in tests before SMTP handshake
+2026-03-25T10:20:06.927384+00:00 mail postfix/postscreen[12683]: DISCONNECT [91.134.138.208]:45996
+2026-03-25T10:31:07.922664+00:00 mail postfix/postfix-script[13879]: refreshing the Postfix mail system
+2026-03-25T10:31:07.931556+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T10:31:07.938905+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T10:31:08.109097+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-10:31:08 Re-exec server during HUP
+2026-03-25T10:31:08.475046+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T10:31:08.475124+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T10:31:08.644308+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T10:31:08.644384+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T10:31:08.651143+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T10:31:08.651211+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T10:31:08.651584+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T10:31:08.651624+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T10:31:08.651643+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T10:31:08.651660+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T10:31:08.651676+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T10:32:24.937123+00:00 mail postfix/postfix-script[14200]: refreshing the Postfix mail system
+2026-03-25T10:32:24.943461+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T10:32:24.968523+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T10:32:25.119910+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-10:32:25 Re-exec server during HUP
+2026-03-25T10:32:25.502838+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T10:32:25.503397+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T10:32:25.669953+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T10:32:25.670456+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T10:32:25.677241+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T10:32:25.677543+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T10:32:25.678034+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T10:32:25.678307+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T10:32:25.678529+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T10:32:25.678748+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T10:32:25.678961+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T10:33:19.904047+00:00 mail postfix/postfix-script[14549]: refreshing the Postfix mail system
+2026-03-25T10:33:19.910490+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T10:33:19.918822+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T10:33:20.118635+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-10:33:20 Re-exec server during HUP
+2026-03-25T10:33:20.488179+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T10:33:20.488271+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T10:33:20.651827+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T10:33:20.651903+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T10:33:20.658815+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T10:33:20.658887+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T10:33:20.659153+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T10:33:20.659190+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T10:33:20.659209+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T10:33:20.659225+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T10:33:20.659239+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T10:33:22.662014+00:00 mail postfix/postfix-script[14640]: refreshing the Postfix mail system
+2026-03-25T10:33:22.668656+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T10:33:22.690876+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T10:33:22.857080+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-10:33:22 Re-exec server during HUP
+2026-03-25T10:33:23.233727+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T10:33:23.233805+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T10:33:23.403920+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T10:33:23.403998+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T10:33:23.411634+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T10:33:23.411914+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T10:33:23.412730+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T10:33:23.413228+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T10:33:23.413426+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T10:33:23.413639+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T10:33:23.414205+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T10:33:25.450449+00:00 mail postfix/postfix-script[14807]: refreshing the Postfix mail system
+2026-03-25T10:33:25.457090+00:00 mail postfix/master[822]: reload -- version 3.7.11, configuration /etc/postfix
+2026-03-25T10:33:25.465899+00:00 mail dovecot: master: Warning: SIGHUP received - reloading configuration
+2026-03-25T10:33:25.649967+00:00 mail amavis[825]: (!)Net::Server: 2026/03/25-10:33:25 Re-exec server during HUP
+2026-03-25T10:33:26.032942+00:00 mail amavis[825]: starting. (warm) /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T10:33:26.033900+00:00 mail amavis[825]: perl=5.036000, user=999, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T10:33:26.197401+00:00 mail amavis[825]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T10:33:26.197961+00:00 mail amavis[825]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T10:33:26.205210+00:00 mail amavis[825]: No ext program for   .zoo, tried: zoo
+2026-03-25T10:33:26.205571+00:00 mail amavis[825]: No ext program for   .doc, tried: ripole
+2026-03-25T10:33:26.206390+00:00 mail amavis[825]: No ext program for   .zst, tried: unzstd
+2026-03-25T10:33:26.206902+00:00 mail amavis[825]: No decoder for       .F   
+2026-03-25T10:33:26.207102+00:00 mail amavis[825]: No decoder for       .doc 
+2026-03-25T10:33:26.207313+00:00 mail amavis[825]: No decoder for       .zoo 
+2026-03-25T10:33:26.207525+00:00 mail amavis[825]: No decoder for       .zst 
+2026-03-25T10:35:10.551284+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:41364 to [192.168.144.2]:25
+2026-03-25T10:35:10.552370+00:00 mail postfix/postscreen[15127]: HANGUP after 0 from [172.235.181.217]:41364 in tests before SMTP handshake
+2026-03-25T10:35:10.552568+00:00 mail postfix/postscreen[15127]: DISCONNECT [172.235.181.217]:41364
+2026-03-25T10:35:27.799286+00:00 mail dovecot: imap-login: Disconnected: Connection closed (disconnected before auth was ready, waited 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<oWuM09ZNSs+s67XZ>
+2026-03-25T10:35:49.365230+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:44776 to [192.168.144.2]:25
+2026-03-25T10:35:55.365617+00:00 mail postfix/postscreen[15127]: PASS NEW [172.235.181.217]:44776
+2026-03-25T10:35:55.381091+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 6 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<6kgx1dZNjqas67XZ>
+2026-03-25T10:35:55.398012+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:02.872990+00:00 mail postfix/smtpd[15197]: lost connection after EHLO from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:02.873132+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] ehlo=0/1 commands=0/1
+2026-03-25T10:36:02.879837+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:42792 to [192.168.144.2]:25
+2026-03-25T10:36:02.879870+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:42792
+2026-03-25T10:36:02.890262+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:10.385536+00:00 mail postfix/smtpd[15197]: lost connection after UNKNOWN from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:10.385685+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:36:10.392471+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:34030 to [192.168.144.2]:25
+2026-03-25T10:36:10.392515+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:34030
+2026-03-25T10:36:10.404498+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:15.398657+00:00 mail postfix/smtpd[15197]: lost connection after CONNECT from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:15.398812+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] commands=0/0
+2026-03-25T10:36:15.405560+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:34088 to [192.168.144.2]:25
+2026-03-25T10:36:15.405603+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:34088
+2026-03-25T10:36:15.424226+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:15.425586+00:00 mail postfix/smtpd[15197]: warning: non-SMTP command from prod47client01.academyforinternetresearch.org[172.235.181.217]: GET / HTTP/1.0
+2026-03-25T10:36:15.425934+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:36:15.745430+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:34090 to [192.168.144.2]:25
+2026-03-25T10:36:15.745476+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:34090
+2026-03-25T10:36:15.765081+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:16.075886+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 1 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<9g9t1tZNZoys67XZ>
+2026-03-25T10:36:16.178687+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 1 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<pqFu1tZNWIys67XZ>
+2026-03-25T10:36:16.236904+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:34110 to [192.168.144.2]:25
+2026-03-25T10:36:16.236946+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:34110
+2026-03-25T10:36:16.259567+00:00 mail postfix/smtpd[15236]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:16.525562+00:00 mail postfix/smtpd[15236]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] ehlo=1 starttls=0/1 quit=1 commands=2/3
+2026-03-25T10:36:16.899828+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:34104 to [192.168.144.2]:25
+2026-03-25T10:36:16.899862+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:34104
+2026-03-25T10:36:16.918386+00:00 mail postfix/smtpd[15236]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:16.977745+00:00 mail postfix/smtpd[15236]: lost connection after CONNECT from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:16.977923+00:00 mail postfix/smtpd[15236]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] commands=0/0
+2026-03-25T10:36:17.079055+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 2 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<hV581tZNToys67XZ>
+2026-03-25T10:36:17.178142+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] quit=1 unknown=0/1 commands=1/2
+2026-03-25T10:36:46.356132+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<ZBo72NZNUpas67XZ>
+2026-03-25T10:36:46.446214+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<Qno82NZNWpas67XZ>
+2026-03-25T10:36:46.549820+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<yAs+2NZNSJas67XZ>
+2026-03-25T10:36:46.606208+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:60112 to [192.168.144.2]:25
+2026-03-25T10:36:46.606236+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:60112
+2026-03-25T10:36:46.616736+00:00 mail postfix/smtpd[15236]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:46.901221+00:00 mail postfix/smtpd[15236]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] ehlo=1 starttls=0/1 quit=1 commands=2/3
+2026-03-25T10:36:46.957203+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:60126 to [192.168.144.2]:25
+2026-03-25T10:36:46.957237+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:60126
+2026-03-25T10:36:46.971799+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:46.972758+00:00 mail postfix/smtpd[15197]: warning: non-SMTP command from prod47client01.academyforinternetresearch.org[172.235.181.217]: \026\003\001\002\000\001\000\001\374\003\003\262\257\346\237\345\253\201\022U#\211\320s\357"rj\321\2
+2026-03-25T10:36:46.972927+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:36:47.007022+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:60130 to [192.168.144.2]:25
+2026-03-25T10:36:47.007039+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:60130
+2026-03-25T10:36:47.017338+00:00 mail postfix/smtpd[15236]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:47.050353+00:00 mail postfix/smtpd[15236]: warning: non-SMTP command from prod47client01.academyforinternetresearch.org[172.235.181.217]: \026\003\001\000W\001\000\000S\003\003i\303\272\277\214A*\022\375\370\344\204VD{pCm\207c\202\301wq\3
+2026-03-25T10:36:47.050661+00:00 mail postfix/smtpd[15236]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:36:47.412026+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<+jZL2NZN5ris67XZ>
+2026-03-25T10:36:47.497795+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=<A4ZM2NZN7ris67XZ>
+2026-03-25T10:36:47.596370+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=172.235.181.217, lip=192.168.144.2, session=</gZO2NZN5Lis67XZ>
+2026-03-25T10:36:47.653593+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:39930 to [192.168.144.2]:25
+2026-03-25T10:36:47.653624+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:39930
+2026-03-25T10:36:47.672392+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:47.944045+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] ehlo=1 starttls=0/1 quit=1 commands=2/3
+2026-03-25T10:36:48.000077+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:39940 to [192.168.144.2]:25
+2026-03-25T10:36:48.000109+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:39940
+2026-03-25T10:36:48.018609+00:00 mail postfix/smtpd[15236]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:48.019670+00:00 mail postfix/smtpd[15236]: warning: non-SMTP command from prod47client01.academyforinternetresearch.org[172.235.181.217]: \026\003\001\002\000\001\000\001\374\003\003w\207Y!3V&\265\350}\360\353i\322\024\245\332k\222\243\00
+2026-03-25T10:36:48.019845+00:00 mail postfix/smtpd[15236]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:36:48.049651+00:00 mail postfix/postscreen[15127]: CONNECT from [172.235.181.217]:39944 to [192.168.144.2]:25
+2026-03-25T10:36:48.049669+00:00 mail postfix/postscreen[15127]: PASS OLD [172.235.181.217]:39944
+2026-03-25T10:36:48.059879+00:00 mail postfix/smtpd[15197]: connect from prod47client01.academyforinternetresearch.org[172.235.181.217]
+2026-03-25T10:36:48.096617+00:00 mail postfix/smtpd[15197]: warning: non-SMTP command from prod47client01.academyforinternetresearch.org[172.235.181.217]: \026\003\001\000`\001\000\000\\\003\003i\303\272\300VV\001\350^\3240.\322\233\366\032\255\302\235\27
+2026-03-25T10:36:48.096787+00:00 mail postfix/smtpd[15197]: disconnect from prod47client01.academyforinternetresearch.org[172.235.181.217] unknown=0/1 commands=0/1
+2026-03-25T10:37:30.870151+00:00 mail postfix/pickup[14812]: D4649145B34: uid=0 from=<admin@l2-4.ephec-ti.be>
+2026-03-25T10:37:30.880275+00:00 mail postfix/cleanup[15385]: D4649145B34: message-id=<20260325103730.D4649145B34@mail.l2-4.ephec-ti.be>
+2026-03-25T10:37:30.881338+00:00 mail opendkim[696]: D4649145B34: localhost [127.0.0.1] not internal
+2026-03-25T10:37:30.881352+00:00 mail opendkim[696]: D4649145B34: not authenticated
+2026-03-25T10:37:30.882903+00:00 mail opendkim[696]: D4649145B34: no signature data
+2026-03-25T10:37:30.884748+00:00 mail postfix/qmgr[14813]: D4649145B34: from=<admin@l2-4.ephec-ti.be>, size=436, nrcpt=1 (queue active)
+2026-03-25T10:37:31.193793+00:00 mail postfix/smtp[15387]: D4649145B34: prepend: header Message-Id: <20260325103730.D4649145B34@mail.l2-4.ephec-ti.b: X-MS-Reactions: disallow
+2026-03-25T10:37:31.280122+00:00 mail postfix/smtp[15387]: D4649145B34: to=<test-4jg055zyu@srv1.mail-tester.com>, relay=reception.mail-tester.com[134.98.158.159]:25, delay=0.42, delays=0.03/0.01/0.11/0.28, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 2DFC61022FC)
+2026-03-25T10:37:31.280794+00:00 mail postfix/qmgr[14813]: D4649145B34: removed
+2026-03-25T10:40:06.672255+00:00 mail postfix/postscreen[15619]: CONNECT from [91.134.138.208]:44350 to [192.168.144.2]:25
+2026-03-25T10:40:06.672392+00:00 mail postfix/postscreen[15619]: HANGUP after 0 from [91.134.138.208]:44350 in tests before SMTP handshake
+2026-03-25T10:40:06.672423+00:00 mail postfix/postscreen[15619]: DISCONNECT [91.134.138.208]:44350
+2026-03-25T10:40:08.159070+00:00 mail postfix/anvil[15199]: statistics: max connection rate 13/60s for (smtpd:172.235.181.217) at Mar 25 10:36:48
+2026-03-25T10:40:08.159089+00:00 mail postfix/anvil[15199]: statistics: max connection count 2 for (smtpd:172.235.181.217) at Mar 25 10:36:16
+2026-03-25T10:40:08.159101+00:00 mail postfix/anvil[15199]: statistics: max cache size 1 at Mar 25 10:35:55
+2026-03-25T11:00:06.277535+00:00 mail postfix/postscreen[17414]: CONNECT from [91.134.138.208]:60420 to [192.168.144.2]:25
+2026-03-25T11:00:06.277783+00:00 mail postfix/postscreen[17414]: HANGUP after 0 from [91.134.138.208]:60420 in tests before SMTP handshake
+2026-03-25T11:00:06.277846+00:00 mail postfix/postscreen[17414]: DISCONNECT [91.134.138.208]:60420
+2026-03-25T11:20:07.061111+00:00 mail postfix/postscreen[19216]: CONNECT from [91.134.138.208]:48454 to [192.168.144.2]:25
+2026-03-25T11:20:07.063356+00:00 mail postfix/postscreen[19216]: HANGUP after 0 from [91.134.138.208]:48454 in tests before SMTP handshake
+2026-03-25T11:20:07.063407+00:00 mail postfix/postscreen[19216]: DISCONNECT [91.134.138.208]:48454
+2026-03-25T11:29:59.053386+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2026-03-25T11:29:59.348356+00:00 mail opendkim[648]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2026-03-25T11:29:59.488570+00:00 mail opendmarc[657]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2026-03-25T11:29:59.488585+00:00 mail opendmarc[657]: additional trusted authentication services: mail.l2-4.ephec-ti.be
+2026-03-25T11:29:59.930255+00:00 mail postfix/postfix-script[766]: starting the Postfix mail system
+2026-03-25T11:29:59.937669+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.937843+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.938330+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.938381+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.938455+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.938691+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.938739+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.939004+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.939223+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.939270+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.939325+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.939643+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.939691+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.939728+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.939953+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.940014+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.940051+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.940475+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.940522+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.940613+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.940935+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.940983+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.941301+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.941380+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.941478+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.941762+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.941865+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.941955+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.942134+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.942247+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.942543+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:29:59.942591+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:29:59.942752+00:00 mail postfix/master[767]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:29:59.943095+00:00 mail postfix/master[767]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-03-25T11:30:00.511229+00:00 mail amavis[768]: starting. /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T11:30:00.511268+00:00 mail amavis[768]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T11:30:00.685407+00:00 mail amavis[768]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T11:30:00.685445+00:00 mail amavis[768]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T11:30:00.693348+00:00 mail amavis[768]: No ext program for   .zoo, tried: zoo
+2026-03-25T11:30:00.693406+00:00 mail amavis[768]: No ext program for   .doc, tried: ripole
+2026-03-25T11:30:00.693847+00:00 mail amavis[768]: No ext program for   .zst, tried: unzstd
+2026-03-25T11:30:00.693873+00:00 mail amavis[768]: No decoder for       .F   
+2026-03-25T11:30:00.693881+00:00 mail amavis[768]: No decoder for       .doc 
+2026-03-25T11:30:00.693888+00:00 mail amavis[768]: No decoder for       .zoo 
+2026-03-25T11:30:00.693894+00:00 mail amavis[768]: No decoder for       .zst 
+2026-03-25T11:31:07.212422+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2026-03-25T11:31:07.491538+00:00 mail opendkim[187]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2026-03-25T11:31:07.629801+00:00 mail opendmarc[196]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2026-03-25T11:31:07.629854+00:00 mail opendmarc[196]: additional trusted authentication services: mail.l2-4.ephec-ti.be
+2026-03-25T11:31:08.063613+00:00 mail postfix/postfix-script[304]: starting the Postfix mail system
+2026-03-25T11:31:08.069563+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.069599+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.069686+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.069736+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.069776+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.069839+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.069925+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.069971+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070032+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070117+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070144+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070190+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070215+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070238+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070347+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070372+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070397+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070442+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070467+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070494+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070533+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070557+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070581+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070730+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070767+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070793+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070837+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070864+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070889+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.070926+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.070952+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:31:08.070975+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:31:08.071014+00:00 mail postfix/master[305]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:31:08.071063+00:00 mail postfix/master[305]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-03-25T11:31:08.644656+00:00 mail amavis[308]: starting. /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T11:31:08.644740+00:00 mail amavis[308]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T11:31:08.808068+00:00 mail amavis[308]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T11:31:08.808137+00:00 mail amavis[308]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T11:31:08.815223+00:00 mail amavis[308]: No ext program for   .zoo, tried: zoo
+2026-03-25T11:31:08.815643+00:00 mail amavis[308]: No ext program for   .doc, tried: ripole
+2026-03-25T11:31:08.816268+00:00 mail amavis[308]: No ext program for   .zst, tried: unzstd
+2026-03-25T11:31:08.816308+00:00 mail amavis[308]: No decoder for       .F   
+2026-03-25T11:31:08.816719+00:00 mail amavis[308]: No decoder for       .doc 
+2026-03-25T11:31:08.816750+00:00 mail amavis[308]: No decoder for       .zoo 
+2026-03-25T11:31:08.817155+00:00 mail amavis[308]: No decoder for       .zst 
+2026-03-25T11:32:38.071093+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2026-03-25T11:32:38.360045+00:00 mail opendkim[186]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2026-03-25T11:32:38.504911+00:00 mail opendmarc[195]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2026-03-25T11:32:38.504953+00:00 mail opendmarc[195]: additional trusted authentication services: mail.l2-4.ephec-ti.be
+2026-03-25T11:32:38.933188+00:00 mail postfix/postfix-script[303]: starting the Postfix mail system
+2026-03-25T11:32:38.939690+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.939748+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.939811+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.939854+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.939895+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.939952+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940004+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940049+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940104+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940145+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940185+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940242+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940283+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940323+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940375+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940415+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940455+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940516+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940559+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940598+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940652+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940692+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940731+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940783+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940824+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940863+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.940919+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.940960+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.940999+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.941053+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.941094+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "policyd-spf" (private/policyd-spf) -- using the last entry
+2026-03-25T11:32:38.941133+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "smtp-amavis" (private/smtp-amavis) -- using the last entry
+2026-03-25T11:32:38.941193+00:00 mail postfix/master[304]: warning: duplicate master.cf entry for service "127.0.0.1:10025" ([127.0.0.1]:10025) -- using the last entry
+2026-03-25T11:32:38.941259+00:00 mail postfix/master[304]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-03-25T11:32:39.525892+00:00 mail amavis[307]: starting. /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T11:32:39.525927+00:00 mail amavis[307]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T11:32:39.690866+00:00 mail amavis[307]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T11:32:39.690897+00:00 mail amavis[307]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T11:32:39.698321+00:00 mail amavis[307]: No ext program for   .zoo, tried: zoo
+2026-03-25T11:32:39.698362+00:00 mail amavis[307]: No ext program for   .doc, tried: ripole
+2026-03-25T11:32:39.699076+00:00 mail amavis[307]: No ext program for   .zst, tried: unzstd
+2026-03-25T11:32:39.699098+00:00 mail amavis[307]: No decoder for       .F   
+2026-03-25T11:32:39.699106+00:00 mail amavis[307]: No decoder for       .doc 
+2026-03-25T11:32:39.699112+00:00 mail amavis[307]: No decoder for       .zoo 
+2026-03-25T11:32:39.699118+00:00 mail amavis[307]: No decoder for       .zst 
+2026-03-25T11:34:12.973915+00:00 mail postfix/submission/smtpd[504]: connect from unknown[43.250.207.102]
+2026-03-25T11:34:13.763456+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 2 secs): user=<>, rip=84.17.58.21, lip=192.168.160.2, session=<p1i2pddNIpdUEToV>
+2026-03-25T11:34:14.348375+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=195.181.161.3, lip=192.168.160.2, session=<Dkq/pddNMJfDtaED>
+2026-03-25T11:34:14.674120+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 2 secs): user=<>, rip=191.101.31.118, lip=192.168.160.2, TLS handshaking: Connection closed, session=<4D/EpddNhOq/ZR92>
+2026-03-25T11:34:14.891483+00:00 mail dovecot: imap-login: Disconnected: Too many invalid commands (no auth attempts in 0 secs): user=<>, rip=185.225.28.7, lip=192.168.160.2, TLS, session=<ipPHpddNkOq54RwH>
+2026-03-25T11:34:15.644806+00:00 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=84.239.49.12, lip=192.168.160.2, TLS, session=<NxLTpddNoOpU7zEM>
+2026-03-25T11:34:16.686771+00:00 mail postfix/submission/smtpd[504]: SSL_accept error from unknown[43.250.207.102]: lost connection
+2026-03-25T11:34:16.686929+00:00 mail postfix/submission/smtpd[504]: lost connection after STARTTLS from unknown[43.250.207.102]
+2026-03-25T11:34:16.687071+00:00 mail postfix/submission/smtpd[504]: disconnect from unknown[43.250.207.102] ehlo=1 starttls=0/1 commands=1/2
+2026-03-25T11:35:37.957925+00:00 mail postfix/postscreen[640]: CONNECT from [152.32.207.150]:33910 to [192.168.160.2]:25
+2026-03-25T11:35:37.958676+00:00 mail postfix/postscreen[640]: PREGREET 257 after 0 from [152.32.207.150]:33910: \026\003\001\000\374\001\000\000\370\003\003{\264C\376\324\275\342\034x\3465\026\034\245\234\b\242mq
+2026-03-25T11:35:37.959105+00:00 mail postfix/postscreen[640]: BARE NEWLINE from [152.32.207.150]:33910 after \026\003\001\000\374\001\000\000\370\003\003{\264C\376\324\275\342\034x\3465\026\034\245\234\b\242mq\243jX\000\300\333\250\246\216\321#\020\031 \021\026\304\335\251J\2150H\315\237\\\201::r\267\027X\025fz\216Q\034~\334\vQ1\036l\0004\314\250\314\251\300/\3000\300+\300,\300\t\000\236\314\250\314\252\0003
+2026-03-25T11:35:37.959195+00:00 mail postfix/postscreen[640]: NON-SMTP COMMAND from [152.32.207.150]:33910 after CONNECT: ??? 
+2026-03-25T11:35:37.959749+00:00 mail postfix/postscreen[640]: DISCONNECT [152.32.207.150]:33910
+2026-03-25T11:35:38.125928+00:00 mail postfix/postscreen[640]: CONNECT from [152.32.207.150]:33912 to [192.168.160.2]:25
+2026-03-25T11:35:44.126422+00:00 mail postfix/postscreen[640]: PASS NEW [152.32.207.150]:33912
+2026-03-25T11:35:44.149286+00:00 mail postfix/smtpd[650]: connect from unknown[152.32.207.150]
+2026-03-25T11:36:11.981569+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2026-03-25T11:36:12.275807+00:00 mail opendkim[642]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2026-03-25T11:36:12.418098+00:00 mail opendmarc[651]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2026-03-25T11:36:12.418118+00:00 mail opendmarc[651]: additional trusted authentication services: mail.l2-4.ephec-ti.be
+2026-03-25T11:36:12.839593+00:00 mail postfix/postfix-script[754]: starting the Postfix mail system
+2026-03-25T11:36:12.845903+00:00 mail postfix/master[755]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-03-25T11:36:13.488316+00:00 mail amavis[758]: starting. /usr/sbin/amavisd at mail.l2-4.ephec-ti.be amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2026-03-25T11:36:13.488390+00:00 mail amavis[758]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2026-03-25T11:36:13.663146+00:00 mail amavis[758]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2026-03-25T11:36:13.663221+00:00 mail amavis[758]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2026-03-25T11:36:13.670712+00:00 mail amavis[758]: No ext program for   .zoo, tried: zoo
+2026-03-25T11:36:13.671245+00:00 mail amavis[758]: No ext program for   .doc, tried: ripole
+2026-03-25T11:36:13.672034+00:00 mail amavis[758]: No ext program for   .zst, tried: unzstd
+2026-03-25T11:36:13.672077+00:00 mail amavis[758]: No decoder for       .F   
+2026-03-25T11:36:13.672447+00:00 mail amavis[758]: No decoder for       .doc 
+2026-03-25T11:36:13.672482+00:00 mail amavis[758]: No decoder for       .zoo 
+2026-03-25T11:36:13.672641+00:00 mail amavis[758]: No decoder for       .zst 
