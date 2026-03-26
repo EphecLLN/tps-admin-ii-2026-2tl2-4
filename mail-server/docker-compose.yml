@@ -19,6 +19,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro # Ajout du volume Let's Encrypt
     environment:
+      - ENABLE_RSPAMD=0
       - ENABLE_SPAMASSASSIN=1
       - ENABLE_CLAMAV=0
       - ENABLE_FAIL2BAN=1
