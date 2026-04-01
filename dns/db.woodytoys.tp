@@ -1,0 +1,5 @@
+; --- CONFIGURATION ROUND-ROBIN (ÉTAPE 3 DU TP) ---
+; On associe le nom 'www' aux 3 adresses IP de ton cluster
+www     IN      A       91.134.138.162    ; IP Manager 1
+www     IN      A       [IP_MANAGER_2]    ; Ton 2ème VPS
+www     IN      A       [IP_WORKER_1]     ; Ton 3ème VPS

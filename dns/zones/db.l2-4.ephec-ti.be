@@ -10,9 +10,14 @@ $TTL 86400
 
 @   IN  A   91.134.138.162
 ns  IN  A   91.134.138.162
-www IN  A   91.134.138.162
 blog IN CNAME www
 mail IN  A   91.134.138.162
+
+
+www  IN  A     91.134.138.162    ; IP Manager 1
+www  IN  A     91.134.137.17     ; IP Manager 2
+
+
 
 @   IN  MX  10 mail.l2-4.ephec-ti.be.
 
