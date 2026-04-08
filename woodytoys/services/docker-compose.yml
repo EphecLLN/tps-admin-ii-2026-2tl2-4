@@ -1,0 +1,70 @@
+version: "3.9"
+
+services:
+  db:
+    image: timo62559/woody_database:latest
+    environment:
+      - MYSQL_DATABASE=woody
+      - MYSQL_ROOT_PASSWORD=pass
+    deploy:
+      replicas: 1
+
+  api-auth:
+    image: timo62559/woody_api:latest
+    deploy:
+      replicas: 1
+
+  api-toys:
+    image: timo62559/woody_api:latest
+    deploy:
+      replicas: 1
+
+  api-heavy:
+    image: timo62559/woody_api:latest
+    user: root
+    command: sh -c "pip install pika redis && python3 /app/main.py"
+    volumes:
+      - ./api/main.py:/app/main.py
+      - ./api/woody.py:/app/woody.py
+    deploy:
+      replicas: 1
+
+  front:
+    image: timo62559/woody_front:latest
+    deploy:
+      replicas: 3
+
+  reverse:
+    image: timo62559/woody_rp:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./reverse-proxy/default.conf:/etc/nginx/conf.d/default.conf
+    deploy:
+      replicas: 1
+
+  redis:
+    image: redis:alpine
+    deploy:
+      replicas: 1
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    deploy:
+      replicas: 1
+
+  worker:
+    image: timo62559/woody_api:latest
+    user: root
+    # LE && EST CRUCIAL ICI POUR LANCER LE SCRIPT APRES L'INSTALLATION
+    command: sh -c "pip install pika redis && python3 /app/worker.py"
+    volumes:
+      - ./worker/worker.py:/app/worker.py
+      - ./api/woody.py:/app/woody.py
+    depends_on:
+      - rabbitmq
+    deploy:
+      replicas: 1
