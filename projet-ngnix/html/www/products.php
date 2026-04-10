@@ -1,16 +1,14 @@
 <?php
-// --- CONFIGURATION DE LA CONNEXION (SÉCURISÉE TP6) ---
-// On récupère les variables définies dans le fichier db.env via Docker
-$dbhost = "db";     // Récupère "mariadb"
-$dbname = "woodytoys"; // Récupère "woodytoys"
-$dbuser = "root";     // Récupère "woodytoys"
-$dbpass = "mypass"; // Récupère ton mot de passe secret
+// On récupère les variables (avec les bonnes valeurs par défaut de ton TP6 en secours)
+$dbhost = getenv('MARIADB_HOST') ?: 'mariadb-tp6';
+$dbname = getenv('MARIADB_DATABASE') ?: 'woodytoys';
+$dbuser = getenv('MARIADB_USER') ?: 'woodytoys';
+$dbpass = getenv('MARIADB_PASSWORD') ?: 'Timo2006$$$$';
 
-// Tentative de connexion
+// Connexion
 $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) 
-    or die("Erreur : Impossible de joindre la base de données sur l'hôte '$dbhost'");
+    or die("Erreur de connexion à la base de données : " . mysqli_connect_error());
 
-// Requête SQL
 $result = mysqli_query($connect, "SELECT id, product_name, product_price FROM products");
 ?>
 
@@ -19,7 +17,7 @@ $result = mysqli_query($connect, "SELECT id, product_name, product_price FROM pr
 <head>
     <title>Catalogue WoodyToys</title>
     <style>
-        /* Design : Fond bleu ciel et centrage */
+        /* Design du wiki : Fond bleu ciel et centrage */
         body {
             background-color: #87CEEB; /* SkyBlue */
             font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -43,25 +41,31 @@ $result = mysqli_query($connect, "SELECT id, product_name, product_price FROM pr
     </style>
 </head>
 <body>
-    <h1>Catalogue WoodyToys - Groupe L2-4</h1>
 
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Désignation du produit</th>
-            <th>Prix</th>
-        </tr>
+<h1>Catalogue WoodyToys - Groupe L2-4</h1>
 
-        <?php
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Désignation du produit</th>
+        <th>Prix</th>
+    </tr>
+
+    <?php
+    if ($result) {
         // Boucle d'affichage des résultats
         while ($row = mysqli_fetch_array($result)) {
             printf("<tr><td>%s</td> <td>%s</td> <td>%s €</td></tr>",
                 $row[0], $row[1], $row[2]);
         }
-        
-        // Fermeture de la connexion
-        mysqli_close($connect);
-        ?>
-    </table>
+    } else {
+        echo "<tr><td colspan='3'>Aucun produit trouvé.</td></tr>";
+    }
+    
+    // Fermeture de la connexion
+    mysqli_close($connect);
+    ?>
+</table>
+
 </body>
 </html>

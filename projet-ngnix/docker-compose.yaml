@@ -1,15 +1,16 @@
 services:
   nginx:
-    build: ./nginx
+    image: nginx:latest
     container_name: nginx-tp6
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./html/www:/var/www/html
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx/letsencrypt:/etc/letsencrypt
-      - ./nginx/ssl:/etc/nginx/ssl
+      - ./html/www:/var/www/html/www
+      - ./html/blog:/var/www/html/blog:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/letsencrypt:/etc/letsencrypt:ro
     networks:
       - frontend
     depends_on:
@@ -19,21 +20,26 @@ services:
     build: ./php
     container_name: php-tp6
     volumes:
-      - ./html/www:/var/www/html
+      - ./html/www:/var/www/html/www
+    env_file:
+      - db.env
     networks:
       - frontend
 
   mariadb:
-    image: mariadb
+    image: mariadb:11.1
     container_name: mariadb-tp6
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: woodytoys
+    env_file:
+      - db/root.env
+      - db.env
     volumes:
+      - ./db/sql/:/docker-entrypoint-initdb.d/
       - ./mysql:/var/lib/mysql
     networks:
-      - frontend
+      - backend
 
 networks:
   frontend:
-    driver: bridge
+    name: tp6_fresh_frontend
+  backend:
+    name: tp6_fresh_backend
