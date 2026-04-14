@@ -1,2 +1,0 @@
-Flask
-python-logstash-async
