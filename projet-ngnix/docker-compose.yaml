@@ -20,8 +20,7 @@ services:
     env_file:
       - db.env
     networks:
-      - frontend 
-
+      - frontend
 
   mariadb:
     image: mariadb:11.1
