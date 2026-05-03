@@ -22,7 +22,7 @@ services:
   api-heavy:
     image: timo62559/woody_api:latest
     user: root
-    command: sh -c "pip install pika redis && python3 /app/main.py"
+    command: sh -c "pip install pika redis && sleep 30 && python3 /app/main.py"
     volumes:
       - ./api/main.py:/app/main.py
       - ./api/woody.py:/app/woody.py
@@ -50,21 +50,23 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_ERLANG_COOKIE=SECRET_COOKIE_POUR_TIM_12345_ABCDE
     ports:
       - "15672:15672"
       - "5672:5672"
     deploy:
       replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
 
   worker:
     image: timo62559/woody_api:latest
     user: root
-    # LE && EST CRUCIAL ICI POUR LANCER LE SCRIPT APRES L'INSTALLATION
-    command: sh -c "pip install pika redis && python3 /app/worker.py"
+    command: sh -c "pip install pika redis && sleep 40 && python3 /app/worker.py"
     volumes:
       - ./worker/worker.py:/app/worker.py
       - ./api/woody.py:/app/woody.py
-    depends_on:
-      - rabbitmq
     deploy:
       replicas: 1
