@@ -4,7 +4,6 @@ services:
     container_name: nginx-tp6
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./html/:/var/www/html/
     networks:
@@ -35,8 +34,6 @@ services:
 
 networks:
   frontend:
-    name: frontend_final
+    name: frontend_new_v2
   backend:
     name: backend_final
-
-
