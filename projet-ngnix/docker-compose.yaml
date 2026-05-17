@@ -4,6 +4,7 @@ services:
     container_name: nginx-tp6
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./html/:/var/www/html/
     networks:
@@ -19,7 +20,8 @@ services:
     env_file:
       - db.env
     networks:
-      - frontend
+      - frontend 
+
 
   mariadb:
     image: mariadb:11.1
@@ -34,6 +36,6 @@ services:
 
 networks:
   frontend:
-    name: frontend_new_v2
+    name: frontend_final
   backend:
     name: backend_final
